@@ -4,8 +4,12 @@ This template will be your guide to display your skill set to developers at Rims
 Since this is a front-end role, we have built the API for you although you are free to adjust the API as you see fit.
 We will be focused on the implementation of your resume and will have questions as you move along in your presentation.
 
-### Installation
+### Prerequisites
+* Have [PHP](https://www.php.net/) installed on your computer
+* Have [Composer v2.x](https://getcomposer.org/download/) installed on your computer
+* Have [NodeJS v16.x](https://nodejs.org/en/) installed on your computer
 
+### Installation
 * Clone from GitHub Repo
 * Run `yarn` to install front-end dependencies and `composer install` to install back-end dependencies
 * copy `.env.example` to `.env`. This is how the client and server will communicate.
@@ -27,3 +31,9 @@ We will be focused on the implementation of your resume and will have questions 
 * @nuxtjs/axios
 * @nuxtjs/tailwindcss
 * typescript
+
+### Calling Backend API Routes with Axios:
+* GET Request to retrieve a specific resume:
+  * `$axios.get('resume/1')`
+* PUT Request to update a specific resume:
+  * `$axios.put('resume/1')`
